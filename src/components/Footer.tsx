@@ -27,12 +27,11 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="px-[200px] py-16">
+    <footer className="px-4 md:px-10 lg:px-16 xl:px-[120px] 2xl:px-[200px] py-12 md:py-16">
       <div className="flex flex-col gap-8">
-        {/* Footer Links */}
-        <div className="flex gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {/* Categories */}
-          <div className="flex w-[258px] flex-col gap-4">
+          <div className="flex w-full lg:w-[258px] flex-col gap-4">
             <h4 className="text-[14px] font-semibold text-[#0f0f0f]" style={{ fontFamily: 'Inter, sans-serif' }}>
               Categories
             </h4>
@@ -46,7 +45,7 @@ export default function Footer() {
           </div>
           
           {/* Explore */}
-          <div className="flex w-[258px] flex-col gap-4">
+          <div className="flex w-full lg:w-[258px] flex-col gap-4">
             <h4 className="text-[14px] font-semibold text-[#0f0f0f]" style={{ fontFamily: 'Inter, sans-serif' }}>
               Explore
             </h4>
@@ -60,7 +59,7 @@ export default function Footer() {
           </div>
           
           {/* For Freelancers */}
-          <div className="flex w-[258px] flex-col gap-4">
+          <div className="flex w-full lg:w-[258px] flex-col gap-4">
             <h4 className="text-[14px] font-semibold text-[#0f0f0f]" style={{ fontFamily: 'Inter, sans-serif' }}>
               For Freelancers
             </h4>
@@ -74,7 +73,7 @@ export default function Footer() {
           </div>
           
           {/* Company */}
-          <div className="flex w-[258px] flex-col gap-4">
+          <div className="flex w-full lg:w-[258px] flex-col gap-4">
             <h4 className="text-[14px] font-semibold text-[#0f0f0f]" style={{ fontFamily: 'Inter, sans-serif' }}>
               Company
             </h4>
@@ -102,10 +101,9 @@ export default function Footer() {
           </div>
         </div>
         
-        {/* Bottom Bar */}
-        <div className="flex items-center justify-between gap-20">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-20">
           {/* Social Icons */}
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4">
             <TwitterIcon className="h-[17px] w-[21px] text-[#4d5761]" />
             <FacebookIcon className="h-5 w-5 text-[#4d5761]" />
             <LinkedInIcon className="h-[17px] w-5 text-[#4d5761]" />

@@ -12,11 +12,11 @@ const categories = [
 
 export default function Categories() {
   return (
-    <section className="relative px-[200px] py-16">
+    <section className="relative px-4 md:px-10 lg:px-16 xl:px-[120px] 2xl:px-[200px] py-12 md:py-16">
       {/* Decorative Icons */}
-      <DecorIcon1 className="absolute left-[155px] top-[441px] h-[19px] w-[10px] text-[#475367]" />
-      <DecorIcon2 className="absolute right-[615px] top-[62px] h-[115px] w-[124px] text-[#f05658]" />
-      <DecorIcon3 className="absolute right-[155px] top-[440px] h-[19px] w-[10px] text-[#475367]" />
+      <DecorIcon1 className="hidden lg:block absolute left-[155px] top-[441px] h-[19px] w-[10px] text-[#475367]" />
+      <DecorIcon2 className="hidden lg:block absolute right-[615px] top-[62px] h-[115px] w-[124px] text-[#f05658]" />
+      <DecorIcon3 className="hidden lg:block absolute right-[155px] top-[440px] h-[19px] w-[10px] text-[#475367]" />
       
       <div className="flex flex-col gap-16">
         {/* Section Header */}
@@ -33,16 +33,13 @@ export default function Categories() {
         </div>
         
         {/* Category Cards */}
-        <div className="flex gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
           {categories.map((category, index) => (
-            <div 
-              key={index} 
-              className={`flex flex-col ${index === 4 ? 'w-[156px]' : 'w-[260px]'}`}
-            >
+            <div key={index} className="flex flex-col w-full">
               <img 
                 src={category.image} 
                 alt={category.title}
-                className="h-[230px] w-full rounded-t-[20px] object-cover"
+                className="h-[180px] sm:h-[200px] lg:h-[230px] w-full rounded-t-[20px] object-cover"
               />
               <div className="flex h-[54px] items-center justify-center bg-white px-4">
                 <p className="text-category text-center">{category.title}</p>

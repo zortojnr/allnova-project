@@ -20,9 +20,9 @@ export default function FAQ() {
   const [activeTab, setActiveTab] = useState('General')
   
   return (
-    <section className="relative px-[200px] py-16">
+    <section className="relative px-4 md:px-10 lg:px-16 xl:px-[120px] 2xl:px-[200px] py-12 md:py-16">
       {/* Decorative Icon */}
-      <FAQDecorIcon className="absolute left-[577px] top-[98px] h-[155px] w-[550px] text-[#f05658]" />
+      <FAQDecorIcon className="hidden lg:block absolute left-[577px] top-[98px] h-[155px] w-[550px] text-[#f05658]" />
       
       <div className="relative z-10 flex flex-col gap-2.5">
         <div className="flex flex-col gap-6">
@@ -36,13 +36,13 @@ export default function FAQ() {
           </div>
           
           {/* Tabs */}
-          <div className="flex items-center justify-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
             {tabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
                 className={`text-body-semibold ${
-                  activeTab === tab ? 'text-[#f4f4f4]' : 'text-[#0f0f0f]'
+                  activeTab === tab ? 'text-[#f05658]' : 'text-[#0f0f0f]'
                 }`}
               >
                 {tab}

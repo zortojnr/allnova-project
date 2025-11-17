@@ -3,9 +3,9 @@ import BrowseIcon from './icons/BrowseIcon'
 
 export default function Templates() {
   return (
-    <section className="bg-gradient-dark relative px-[200px] py-20">
+    <section className="bg-gradient-dark relative px-4 md:px-10 lg:px-16 xl:px-[120px] 2xl:px-[200px] py-16 lg:py-20">
       {/* Decorative Arrow */}
-      <DecorArrowIcon className="absolute right-[415px] top-[170px] h-[99px] w-[38px] text-[#f05658]" />
+      <DecorArrowIcon className="hidden lg:block absolute right-[415px] top-[170px] h-[99px] w-[38px] text-[#f05658]" />
       
       <div className="flex flex-col gap-8">
         {/* Section Header */}
@@ -19,17 +19,17 @@ export default function Templates() {
         </div>
         
         {/* Template Grid */}
-        <div className="flex gap-5">
+        <div className="flex flex-col lg:flex-row gap-5">
           {/* Main Template */}
           <img 
             src="/images/template-main.jpg" 
             alt="Template"
-            className="h-[425px] w-[527px] rounded-[10px_0px_10px_0px] object-cover"
+            className="h-[250px] sm:h-[320px] lg:h-[425px] w-full lg:w-[527px] rounded-[10px_0px_10px_0px] object-cover"
           />
           
           {/* Template Grid */}
           <div className="flex flex-col gap-5">
-            <div className="flex gap-5">
+            <div className="grid grid-cols-2 gap-5">
               <img 
                 src="/images/template-1.jpg" 
                 alt="Template"
@@ -41,7 +41,7 @@ export default function Templates() {
                 className="h-[183px] w-[318px] rounded-[10px_0px_10px_0px] object-cover"
               />
             </div>
-            <div className="flex gap-5">
+            <div className="grid grid-cols-2 gap-5">
               <img 
                 src="/images/template-3.jpg" 
                 alt="Template"

@@ -4,12 +4,12 @@ import PathDecorIcon from './icons/PathDecorIcon'
 
 export default function Community() {
   return (
-    <section className="relative px-[200px] py-16">
+    <section className="relative px-4 md:px-10 lg:px-16 xl:px-[120px] 2xl:px-[200px] py-12 md:py-16">
       {/* Decorative Icons */}
-      <CommunityDecorIcon className="absolute left-[736px] top-[120px] h-16 w-[105px] text-[#f05658]" />
-      <PathDecorIcon className="absolute right-[128px] top-0 h-[299px] w-[281px]" style={{ border: '20px solid rgba(70, 0, 80, 0.11)' }} />
+      <CommunityDecorIcon className="hidden lg:block absolute left-[736px] top-[120px] h-16 w-[105px] text-[#f05658]" />
+      <PathDecorIcon className="hidden lg:block absolute right-[128px] top-0 h-[299px] w-[281px]" style={{ border: '20px solid rgba(70, 0, 80, 0.11)' }} />
       
-      <div className="flex gap-20">
+      <div className="flex flex-col lg:flex-row gap-10 lg:gap-20">
         {/* Content */}
         <div className="flex flex-col gap-3">
           <h2 className="text-body-semibold text-primary">Tribe</h2>
@@ -63,7 +63,7 @@ export default function Community() {
         <img 
           src="/images/community-image.jpg" 
           alt="Community"
-          className="h-[440px] w-[655px] rounded-[20px_20px_0px_20px] object-cover"
+          className="h-[300px] sm:h-[380px] lg:h-[440px] w-full lg:w-[655px] rounded-[20px_20px_0px_20px] object-cover"
         />
       </div>
     </section>

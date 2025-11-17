@@ -3,12 +3,12 @@ import SearchIcon from './icons/SearchIcon'
 
 export default function Hero() {
   return (
-    <section className="relative px-[200px] pb-[120px] pt-[24px]">
+    <section className="relative px-4 md:px-10 lg:px-16 xl:px-[120px] 2xl:px-[200px] pb-16 md:pb-[120px] pt-6 md:pt-[24px]">
       {/* Decorative SVG */}
       <img 
         src="/images/hero-decoration.svg" 
         alt="" 
-        className="absolute left-[210px] top-[238px] h-[163px] w-[1308px]"
+        className="hidden xl:block absolute left-[210px] top-[238px] h-[163px] w-[1308px]"
       />
       
       <div className="relative z-10 flex flex-col gap-6">
@@ -29,7 +29,7 @@ export default function Hero() {
         </div>
         
         {/* Search Bar */}
-        <div className="mx-auto flex w-[493px] items-center gap-4 rounded-[40px] bg-[#f3f4f6] px-5 py-4">
+        <div className="mx-auto flex w-full max-w-[493px] items-center gap-4 rounded-[40px] bg-[#f3f4f6] px-5 py-4">
           <Input 
             placeholder="What are you looking for?" 
             className="border-0 bg-transparent text-sm placeholder:text-[#4d5761] focus-visible:ring-0"
@@ -40,7 +40,7 @@ export default function Hero() {
         {/* Popular Search Tags */}
         <div className="flex items-center justify-center gap-2">
           <span className="text-[18px] font-normal text-[#4d5761]">Popular Search:</span>
-          <div className="flex flex-wrap items-center gap-6">
+          <div className="flex flex-wrap items-center gap-3 md:gap-6">
             {['Graphic Design', 'Web Development', 'Programming', 'UI/UX Design', 'Presentation Design', 'Video Editing'].map((tag) => (
               <span key={tag} className="text-sm text-[#4d5761]">{tag}</span>
             ))}

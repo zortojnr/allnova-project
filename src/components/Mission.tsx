@@ -6,8 +6,8 @@ import ArrowRightIcon from './icons/ArrowRightIcon'
 
 export default function Mission() {
   return (
-    <section className="px-[200px] py-16">
-      <div className="flex flex-col gap-16">
+    <section className="px-4 md:px-10 lg:px-16 xl:px-[120px] 2xl:px-[200px] py-12 md:py-16">
+      <div className="flex flex-col gap-12 md:gap-16">
         {/* Mission Header */}
         <div className="flex flex-col gap-5">
           <h2 className="text-body-semibold text-center text-primary">Our Mission</h2>
@@ -22,9 +22,9 @@ export default function Mission() {
         </div>
         
         {/* Feature Cards */}
-        <div className="flex gap-5">
+        <div className="flex flex-col gap-5 lg:flex-row">
           {/* Accessibility Card */}
-          <div className="bg-gradient-blue flex h-[500px] w-[318px] flex-col items-center justify-end rounded-[0px_36px_0px_36px] p-8">
+          <div className="bg-gradient-blue flex h-[420px] md:h-[500px] w-full lg:w-[318px] flex-col items-center justify-end rounded-[0px_36px_0px_36px] p-8">
             <div className="flex flex-col items-center gap-8">
               <div className="flex h-[73px] w-[73px] items-center justify-center rounded-full bg-[rgba(115,168,230,0.67)]">
                 <AccessibilityIcon className="h-[67px] w-[67px]" />
@@ -34,7 +34,7 @@ export default function Mission() {
           </div>
           
           {/* Functionality Card */}
-          <div className="bg-gradient-purple flex h-[500px] w-[650px] flex-col items-center justify-between rounded-[0px_36px_0px_36px] p-8">
+          <div className="bg-gradient-purple flex h-[420px] md:h-[500px] w-full lg:w-[650px] flex-col items-center justify-between rounded-[0px_36px_0px_36px] p-8">
             <div className="flex flex-col items-center gap-8 pt-4">
               <div className="flex h-[73px] w-[71px] items-center justify-center rounded-full bg-[rgba(210,147,219,0.73)]">
                 <FunctionalityIcon className="h-[73px] w-[71px]" />
@@ -53,7 +53,7 @@ export default function Mission() {
           </div>
           
           {/* Security Card */}
-          <div className="bg-gradient-green flex h-[500px] w-[318px] flex-col items-center justify-end rounded-[0px_36px_0px_36px] p-8">
+          <div className="bg-gradient-green flex h-[420px] md:h-[500px] w-full lg:w-[318px] flex-col items-center justify-end rounded-[0px_36px_0px_36px] p-8">
             <div className="flex flex-col items-center gap-8">
               <div className="flex h-[68px] w-[60px] items-center justify-center rounded-full bg-[rgba(177,240,170,0.52)]">
                 <SecurityIcon className="h-[68px] w-[60px]" />

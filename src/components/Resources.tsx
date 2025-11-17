@@ -30,8 +30,8 @@ const resources = [
 
 export default function Resources() {
   return (
-    <section className="px-[200px] py-16">
-      <div className="flex flex-col gap-16">
+    <section className="px-4 md:px-10 lg:px-16 xl:px-[120px] 2xl:px-[200px] py-12 md:py-16">
+      <div className="flex flex-col gap-12 md:gap-16">
         {/* Section Header */}
         <div className="flex flex-col gap-5">
           <h2 className="heading-lg mx-auto max-w-[1328px] text-center">
@@ -43,12 +43,12 @@ export default function Resources() {
         </div>
         
         {/* Content */}
-        <div className="flex gap-20">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-20">
           {/* Image */}
           <img 
             src="/images/resources-image.jpg" 
             alt="Resources"
-            className="h-[466px] w-[655px] rounded-[20px_20px_0px_20px] object-cover"
+            className="h-[300px] sm:h-[380px] lg:h-[466px] w-full lg:w-[655px] rounded-[20px_20px_0px_20px] object-cover"
           />
           
           {/* Resources List */}
@@ -73,7 +73,7 @@ export default function Resources() {
             </div>
             
             {/* CTA Buttons */}
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-3 md:gap-4">
               <Button className="flex items-center gap-2 rounded-xl bg-[#f05658] px-6 py-3 text-white hover:bg-[#d04446]">
                 <SmallArrowIcon className="h-3 w-4" />
                 <span className="text-body-medium">Explore Free Resources</span>

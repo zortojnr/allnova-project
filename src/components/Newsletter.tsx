@@ -3,8 +3,8 @@ import { Button } from '@/components/ui/button'
 
 export default function Newsletter() {
   return (
-    <section className="px-[200px] py-16">
-      <div className="flex items-center justify-between gap-8">
+    <section className="px-4 md:px-10 lg:px-16 xl:px-[120px] 2xl:px-[200px] py-12 md:py-16">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8">
         {/* Label */}
         <div className="flex flex-col gap-2">
           <h3 className="text-[24px] font-bold text-[#0f0f0f]" style={{ fontFamily: 'Inter, sans-serif' }}>
@@ -16,8 +16,8 @@ export default function Newsletter() {
         </div>
         
         {/* Input */}
-        <div className="flex gap-3.5">
-          <div className="flex w-[300px] items-center rounded-lg border border-[#d2d6db] px-4 py-3">
+        <div className="flex w-full md:w-auto gap-3.5">
+          <div className="flex w-full md:w-[300px] items-center rounded-lg border border-[#d2d6db] px-4 py-3">
             <Input 
               type="email"
               placeholder="Enter email" 

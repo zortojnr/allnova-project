@@ -18,13 +18,13 @@ const features = [
 
 export default function Workflow() {
   return (
-    <section className="px-[200px] py-16">
-      <div className="flex gap-20">
+    <section className="px-4 md:px-10 lg:px-16 xl:px-[120px] 2xl:px-[200px] py-12 md:py-16">
+      <div className="flex flex-col lg:flex-row gap-10 lg:gap-20">
         {/* Image */}
         <img 
           src="/images/workflow-image.jpg" 
           alt="Workflow"
-          className="h-[410px] w-[655px] rounded-[10px] object-cover"
+          className="h-[280px] sm:h-[360px] lg:h-[410px] w-full lg:w-[655px] rounded-[10px] object-cover"
         />
         
         {/* Content */}
@@ -39,7 +39,7 @@ export default function Workflow() {
           </div>
           
           {/* Features List */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-6 md:gap-8">
             {features.map((feature, index) => (
               <div key={index} className="flex gap-4">
                 <span 

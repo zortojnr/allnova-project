@@ -19,8 +19,8 @@ const articles = [
 
 export default function Articles() {
   return (
-    <section className="px-[200px] py-16">
-      <div className="flex flex-col gap-16">
+    <section className="px-4 md:px-10 lg:px-16 xl:px-[120px] 2xl:px-[200px] py-12 md:py-16">
+      <div className="flex flex-col gap-12 md:gap-16">
         {/* Section Header */}
         <div className="flex items-start justify-between">
           <div className="flex flex-col gap-3">
@@ -40,13 +40,13 @@ export default function Articles() {
         </div>
         
         {/* Article Cards */}
-        <div className="flex gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {articles.map((article, index) => (
             <div key={index} className="flex flex-col gap-5">
               <img 
                 src={article.image} 
                 alt={article.title}
-                className="h-[277px] w-[424px] rounded-2xl object-cover"
+                className="h-[220px] sm:h-[250px] lg:h-[277px] w-full lg:w-[424px] rounded-2xl object-cover"
               />
               <div className="flex flex-col gap-5">
                 <h4 className="text-[20px] font-semibold leading-7 text-[#0f0f0f]" style={{ fontFamily: 'Inter, sans-serif' }}>
