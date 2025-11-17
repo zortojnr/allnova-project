@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mali:wght@400&family=Manrope:wght@600&family=DM+Sans:wght@600&family=Poppins:wght@600&family=Urbanist:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+/* Color variables */
+@theme inline {
+  /* Primary colors */
+  --color-primary: #6a0dad;
+  --color-primary-dark: #400049;
+  --color-accent: #f05658;
+  
+  /* Text colors */
+  --color-text-primary: #0f0f0f;
+  --color-text-secondary: #4d5761;
+  --color-text-muted: #6c727e;
+  --color-text-light: #98a2b3;
+  
+  /* Background colors */
+  --color-bg-light: #f3f4f6;
+  --color-bg-white: #ffffff;
+  --color-bg-dark: #171717;
+  --color-bg-darker: #101928;
+  
+  /* Gradient colors */
+  --color-gradient-blue-start: #011e40;
+  --color-gradient-blue-end: #014088;
+  --color-gradient-purple-start: #460050;
+  --color-gradient-purple-end: #630071;
+  --color-gradient-green-start: #026813;
+  --color-gradient-green-end: #003b0a;
+  
+  /* Border colors */
+  --color-border: #e5e7eb;
+  --color-border-dark: #d2d6db;
+}
+
+/* Typography utilities */
+@utility heading-hero {
+  font-family: Inter, sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.20px;
+  color: var(--color-text-primary);
+}
+
+@utility heading-xl {
+  font-family: Inter, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50.40px;
+  color: var(--color-text-primary);
+}
+
+@utility heading-lg {
+  font-family: Inter, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+@utility heading-md {
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+@utility heading-feature {
+  font-family: Mali, cursive;
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--color-bg-white);
+}
+
+@utility text-body-lg {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--color-text-secondary);
+}
+
+@utility text-body {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+@utility text-body-medium {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+@utility text-body-semibold {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+@utility text-sm {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+@utility text-category {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+/* Gradient backgrounds */
+@utility bg-gradient-blue {
+  background: linear-gradient(43.5deg, var(--color-gradient-blue-start) 42.65%, var(--color-gradient-blue-end) 59.45%);
+}
+
+@utility bg-gradient-purple {
+  background: linear-gradient(0.85deg, var(--color-gradient-purple-start) 29.2%, var(--color-gradient-purple-end) 46.57%);
+}
+
+@utility bg-gradient-green {
+  background: linear-gradient(314.23deg, var(--color-gradient-green-start) 37.39%, var(--color-gradient-green-end) 53.62%);
+}
+
+@utility bg-gradient-dark {
+  background: linear-gradient(114.09deg, #111111 66.2%, #1e1d1a 10%, #1c3843 149.46%);
+}
+
+/* Reset default body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  background-color: var(--color-bg-white);
+  color: var(--color-text-primary);
+}
